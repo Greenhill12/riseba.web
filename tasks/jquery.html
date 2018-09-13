@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>jQuery piemērs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <span>Vārds: </span><input type="text" id="name" />
+    <span>Uzvārds: </span><input type="text" id="surname" />
+    <br/><br/>
+    <input type="button" id="ok" value="OK" />
+
+    <script>
+        $(document).ready(function(){
+            $('#ok').click(function(){
+               var name = $('#name').val();
+               var surname = $('#surname').val();
+               
+               var result = 'Mani sauc ' + name + ' ' + surname;
+
+               console.log(result);
+               $('#result').html(result);
+               alert(result);
+            });
+        });
+    </script>
+</body>
+</html>

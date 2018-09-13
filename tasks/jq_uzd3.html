@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>jQuery uzdevums 3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <span>Grādi: </span><input type="text" id="gradi" />
+    <br/>
+    <br/>
+    <input type="button" value="Uz Fārenheitiem" id="fahrenheit" />
+    <input type="button" value="Uz Celsiju" id="celsius" />
+    <br/>
+    <br/>
+    <span id="result">Rezultāts:</span>
+    <script>
+        $(document).ready(function(){
+            $('#fahrenheit').click(function(){
+                var a = parseInt($('#gradi').val());
+                var fahr = a * (9 / 5) + 32;
+
+                $('#result').html('Rezultāts: ' + fahr);
+            });
+            $('#celsius').click(function(){
+                var a = parseInt($('#gradi').val());
+                var fahr = (a - 32) * (5 / 9);
+
+                $('#result').html('Rezultāts: ' + fahr);
+            });
+
+        });
+    </script>
+</body>
+</html>

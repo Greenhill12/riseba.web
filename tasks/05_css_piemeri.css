@@ -1,0 +1,62 @@
+body {
+    background-color: green;
+    background-image: url('http://www.tvnet.lv/public/img/logos/tvnet.svg');
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+    height: 2000px;
+    color: #000000;
+}
+
+p.blue {
+    color: rgb(0, 0, 255);
+    font-weight: 400;
+    font-size: large;
+    text-transform: capitalize;
+    line-height: 1.5em;
+    text-align: center;
+    height: 200px;
+    border: 2px dotted red;
+}
+
+p.ident {
+    text-indent: 20px;
+    text-align: left;
+    text-transform: lowercase;
+    border:3px double yellow;
+    margin: 30px;
+}
+
+span.mark {
+    text-transform: uppercase;
+    font-size: 26px
+}
+
+p.border {
+    border: 2px dashed blue;
+    min-height: 400px;
+    padding: 10px;
+}
+
+div.side,
+div.content,
+div.footer {
+    float: left;
+    padding: 5px;
+    margin: 10px;
+    background-color: red;
+    width: 25%;
+}
+
+div.content {
+    float: right;
+    width: 60%;
+}
+
+div.footer {
+    clear: both;
+    background-color: yellow;
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
+

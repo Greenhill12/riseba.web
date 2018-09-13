@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Mans mazais kalkulātors_2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <span>Skaitlis 1:</span><input type="text" id="skaitlis1" />
+    <br/>
+    <span>Skaitlis 2:</span><input type="text" id="skaitlis2" />
+    <br/>
+    <br/>
+    <input type="button" value="Summa" id="plus" />
+    <input type="button" value="Starpība" id="minus" />
+    <input type="button" value="Reizināšana" id="multiply" />
+    <input type="button" value="Dalīšana" id="divide" />
+    <br/>
+    <br/>
+    <span id="result">Rezultāts:</span>
+
+    <script>
+        $(document).ready(function(){
+
+            $('#plus').click(function(){
+
+                var a = parseInt($('#skaitlis1').val());
+                var b = parseInt($('#skaitlis2').val());
+
+                var sum = a + b;
+
+                $('#result').html('Rezultāts: ' + sum);
+            });
+            $('#minus').click(function(){
+
+                var a = parseInt($('#skaitlis1').val());
+                var b = parseInt($('#skaitlis2').val());
+
+                var sum = a - b;
+
+                $('#result').html('Rezultāts: ' + sum);
+            });
+            $('#multiply').click(function(){
+
+                var a = parseInt($('#skaitlis1').val());
+                var b = parseInt($('#skaitlis2').val());
+
+                var sum = a * b;
+
+                $('#result').html('Rezultāts: ' + sum);
+            });
+            $('#divide').click(function(){
+
+                var a = parseInt($('#skaitlis1').val());
+                var b = parseInt($('#skaitlis2').val());
+
+                var sum = a / b;
+
+                $('#result').html('Rezultāts: ' + sum);
+            });
+        });
+    </script>
+</body>
+</html>

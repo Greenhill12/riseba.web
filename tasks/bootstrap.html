@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ievadformas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <form id="form1">
+        <label for="login">Lietotājs:</label>
+        <input type="text" id="login"/>
+        <br/>
+        <label for="dropdown">Izvēlne:</label>
+        <select id="dropdown">
+            <option value="1">Elements 1</option>
+            <option value="2">Elements 2</option>
+        </select>
+        <br/><br/>
+
+        <input type="submit" value="Iesniegt" />
+    </form>
+
+    <script>
+        $(function(){
+            $("#form1").submit(function(){
+                alert("Forma tika iesūtīta");
+
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>

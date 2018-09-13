@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>jQuery uzdevums 4</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <input type="text" id="username" placeholder="Lietotājvārds" />
+    <br/>
+    <br/>
+    <input type="text" id="password" placeholder="Parole" />
+    <br/>
+    <br/>
+    <input type="button" value="Pieslēgties" id="login" />
+
+    <script>
+        $(document).ready(function(){
+            $('#login').click(function(){
+                var user = $('#username').val();
+                var pass = $('#password').val();
+                
+                if (user == 'admin' && pass == 'pass123') {
+                    alert('Pieslēgšanās bija veiksmīga!');
+                    window.open('http://www.delfi.lv')                    
+                } else {
+                    alert('Lietotājvārds un/vai parole nebija pareiza')
+                }
+            });
+        });
+    </script>
+</body>
+</html>

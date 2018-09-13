@@ -1,0 +1,116 @@
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    
+}
+
+a:hover {
+    color: yellow;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background-color: lightblue;
+}
+
+h1 {
+    padding: 0;
+    padding-top: 1em;
+    margin: 0;
+    font-size: 3em;
+    text-transform: capitalize;
+    font-variant: small-caps;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: left;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.active {
+    color: lightgrey;
+}
+
+.clear {
+    clear: both;
+}
+
+.content {
+    float: left;
+    box-sizing: border-box;
+    width: 80%;
+    padding: 2em;
+}
+
+.float {
+    float: left;
+    box-sizing: border-box;
+    width: 33.33333%;
+    text-align: center;
+}
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+}
+
+.h1-color {
+    color: #279b04;
+}
+
+.list {
+    padding: 1em;
+    font-size: 1em;
+    color: green;
+}
+
+.piemeri {
+    color: green;
+}
+
+.pic {
+    padding: 2em;
+    padding-bottom: 0em;
+    width: 100px;
+}
+
+.pic_name {
+    padding: 0;
+    color: rgb(53, 53, 53);
+    font-weight: bolder;
+}
+
+.side {
+    background-color: #279b04;
+    float: left;
+    box-sizing: border-box;
+    width: 20%;
+    padding: 1em;
+    height: 100%;
+    position: relative;
+}
+
+.text {
+    text-indent: 2em;
+    text-align: justify;
+}
+
+#be_green {
+    padding-top: 0;
+    padding-bottom: 4em;
+    text-align: center;
+    width: 100%;
+}
+
+#pic_es {
+    border-radius: 50%;
+    padding-top: 2em;
+}
